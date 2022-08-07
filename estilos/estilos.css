@@ -82,11 +82,48 @@ p {
 }
 
 
-.imagenCover {
+.element2 .element2-img{
     object-fit: cover;
     width: 48em;
     height: 40em;
     margin: 1em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: 2s transform;
+}
+
+.element2:hover .element2-img{
+    transform: scale(1.2);
+}
+
+.element2 .element2-description{
+     position:absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(41,49,51, 0.7);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     font-family: Arial, Helvetica, sans-serif;
+     transition: 0.5s opacity ease-in-out;
+     opacity: 0;
+}
+
+.element2:hover .element2-description{
+    opacity: 1;
+}
+
+.element2{
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 1px 0px;
+    padding: opx;
 }
 
 /*  SECCION TITULO  */
@@ -185,13 +222,49 @@ footer {
     text-align: center;
 }
 
-.imagenesProyectos {
+.element .element-img{
     object-fit: cover;
     width: 35em;
     height: 30em;
     margin: 1em;
     display: flex;
     flex-direction: row;
+    position: relative;
+    transition: 2s transform;
+}
+
+.element:hover .element-img{
+    transform: scale(1.2);
+}
+
+
+.element .element-description{
+     position:absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(41,49,51, 0.7);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     font-family: Arial, Helvetica, sans-serif;
+     transition: 0.5s opacity ease-in-out;
+     opacity: 0;
+}
+
+.element:hover .element-description{
+    opacity: 1;
+}
+
+.element{
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 1px 0px;
+    padding: opx;
 }
 
 /*====================   SECCION SERVICIOS  ==================*/

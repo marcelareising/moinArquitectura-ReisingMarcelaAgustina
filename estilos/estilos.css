@@ -44,7 +44,7 @@ html {
 /*====================   MAIN   ==================*/
 
 h2 {
-    color: #49111C;
+    color: #A9927D;
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
@@ -150,12 +150,40 @@ p {
 }
 
 .citazumthor__paragraph {
-    color: rgb(176, 176, 176);
+    color: rgb(103, 100, 100);
     font-family: 'Quicksand', sans-serif;
     font-style: italic;
     font-size: 1.5rem;
-    padding: 0px;
+    padding: 2rem;
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*  SECCION FIN DE INDEX  */
+
+.findeindex{
+    background-color: #5E503F; 
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.findeindex_parrafo{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    margin: 2rem;
 }
 
 /*====================   FOOTER   ==================*/
@@ -204,6 +232,14 @@ footer {
     padding: 0em 0em 1em 0em;
     margin-left: 1em;
     text-align: center;
+}
+
+.proyectos_parrafo{
+    padding: 0em 0em 1em 0em;
+    margin-left: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+
 }
 
 .element .element-img {
@@ -287,14 +323,68 @@ footer {
     text-align: center;
 }
 
+.element2 .element-img {
+    object-fit: cover;
+    width: 47em;
+    height: 32em;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: 2s transform;
+}
+
+.element2:hover .element-img {
+    transform: scale(1.2);
+}
+
+
+.element2 .element-description {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 49, 51, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s opacity ease-in-out;
+    opacity: 0;
+}
+
+.element2:hover .element-description {
+    opacity: 1;
+}
+
+.element2 {
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 1px 0px;
+    padding: opx;
+}
+
 /*====================   SECCION NOSOTROS  ==================*/
 
-.equipo {
-    margin-left: 10px;
+.equipo__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
 }
 
 .equipo__paragraph {
     padding: 15px 0px 15px 0px;
+}
+
+.equipo_paragraph2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    font-style: italic;
 }
 
 .nosotros__imagenes {
@@ -311,24 +401,50 @@ footer {
     margin: 1.5em;
 }
 
-.equipo__title {
-    text-align: center;
+.carrera{
+    background-color: #5E503F; 
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
+
+.carrera_parrafo{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
 
 /*====================   SECCION CONTACTO  ==================*/
 
 .contacto {
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px 20px 10px;
 }
 
 .contacto__title {
     padding: 10px;
     color: #A9927D;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .contacto_paragraph {
     padding: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #49111C;
 }
 
 .formulario {
@@ -547,6 +663,13 @@ footer {
         margin: 1em 0em 5em 0em;
     }
 
+    .equipo__title {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        padding-top: 1em;
+    }
+
     /*====================   SECCION CONTACTO  ==================*/
 
     .contacto__title {
@@ -579,10 +702,10 @@ footer {
 
     .formulario {
         grid-area: formulariocontacto;
-        padding-top: 7rem;
+        padding-top: 3rem;
         padding-left: 4rem;
         padding-right: 4rem;
-        padding-bottom: 7rem;
+        padding-bottom: 2rem;
     }
 
     .contacto {

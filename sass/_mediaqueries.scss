@@ -1,0 +1,259 @@
+/*Media query TABLET*/
+
+@media screen and (min-width: 600px) {
+
+
+    /*====================   MAIN   ==================*/
+
+    h2 {
+        color: #A9927D;
+        font-size: $sizetitulo;
+        font-family: 'Quicksand', sans-serif;
+        margin-left: 0.5em;
+    }
+
+    p {
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: $sizeparrafo;
+        font-style: normal;
+        margin-left: 0.5em;
+        margin-top: 1.5rem;
+    }
+
+    .imagenesIndex {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .imagenCover {
+        object-fit: cover;
+        width: 48em;
+        height: 40em;
+        margin: 1em;
+    }
+
+    /*====================   FOOTER   ==================*/
+
+    footer {
+        background-color: #A9927D;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas:
+            'copywright iconosFooter';
+        height: 9rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    .copywright {
+        grid-area: copywright;
+        margin-left: 0;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .footer_iconos {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        grid-area: iconosFooter;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .footer_iconos1 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /*====================   SECCION PROYECTOS   ==================*/
+
+
+    .proyectos__title {
+        padding: 2em 0em 1em 0em;
+        margin-left: 1em;
+        text-align: left;
+    }
+
+    .imagenesProyectos {
+        object-fit: cover;
+        width: 35em;
+        height: 30em;
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*====================   SECCION SERVICIOS  ==================*/
+
+    .servicios__titulo {
+        text-align: left;
+    }
+
+    .servicios__imagenes {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*====================   SECCION NOSOTROS  ==================*/
+
+    .equipo {
+        margin-left: 0px;
+    }
+
+    .nosotros__imagenes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1em 0em 5em 0em;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .equipo__title {
+        text-align: left;
+        padding-top: 1em;
+    }
+
+    /*====================   SECCION CONTACTO  ==================*/
+
+    .contacto__title {
+        padding: 10px;
+        color: #A9927D;
+        text-align: left;
+    }
+
+    .imagenMapa {
+        width: 60em;
+        height: 30em;
+        margin-left: 0em;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+    }
+
+}
+
+/*Media query DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+    /*====================   MAIN   ==================*/
+
+    .imagenesIndex {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*====================   SECCION SERVICIOS  ==================*/
+
+    .servicios__imagenes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+        margin-top: 3em;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .servicios__titulo {
+        text-align: left;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    /*====================   SECCION NOSOTROS  ==================*/
+
+    .equipo__paragraph {
+        padding: 0px 0px 15px 0px;
+    }
+
+    .nosotros__imagenes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em 0em 5em 0em;
+    }
+
+    .equipo__title {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        padding-top: 1em;
+    }
+
+    /*====================   SECCION CONTACTO  ==================*/
+
+    .contacto__title {
+        grid-area: titulocontacto;
+        display: flex;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .imagenMapa {
+        width: 100em;
+        height: 50em;
+        margin-left: 0em;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        grid-area: mapacontacto;
+        padding-top: 12rem;
+    }
+
+    .contacto_paragraph {
+        grid-area: parrafocontacto;
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        padding-bottom: 3rem;
+    }
+
+    .formulario {
+        grid-area: formulariocontacto;
+        padding-top: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .contacto {
+        margin: 1rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 0rem;
+        grid-template-areas:
+            'titulocontacto titulocontacto'
+            'parrafocontacto parrafocontacto '
+            'formulariocontacto mapacontacto';
+        justify-items: left;
+
+    }
+
+}

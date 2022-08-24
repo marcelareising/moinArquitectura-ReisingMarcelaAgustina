@@ -1,0 +1,38 @@
+
+.contacto {
+    padding: 0px 10px 20px 10px;
+
+    h2{
+        @extend .titulorosagris;
+        padding: 10px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    p{
+        padding: 10px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        color: $bordo;
+    }
+    
+}
+
+.formulario {
+    font-size: $sizeparrafo;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border: #A9927D;
+    border-style: dashed;
+    border-radius: 10px;
+    border-width: 1.5px;
+}
+
+.imagenMapa {
+    width: 46em;
+    height: 25em;
+    margin-left: 1em;
+}

@@ -1,0 +1,55 @@
+
+.equipo__title {
+    @extend .titulorosagris;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.equipo__paragraph {
+    padding: 15px 0px 15px 0px;
+}
+
+.equipo_paragraph2 {
+    @include citas(2.5rem, italic);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nosotros__imagenes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1em 0em 5em 0em;
+}
+
+.imagenEquipo {
+    object-fit: cover;
+    width: 47.5em;
+    height: 32em;
+    margin: 1.5em;
+}
+
+.carrera{
+    background-color: #5E503F; 
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    p{
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        font-style: normal;
+        font-size: $sizeparrafo;
+        padding: 5px; 
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem;
+        font-family: 'Quicksand', sans-serif;
+        font-size: $sizetitulo;
+        margin: 2rem;
+    } 
+}

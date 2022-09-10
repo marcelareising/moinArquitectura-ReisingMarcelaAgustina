@@ -36,7 +36,7 @@
 .element img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 35em;
+  width: 34em;
   height: 30em;
   margin: 1em;
   display: flex;
@@ -98,7 +98,7 @@
 }
 
 .imagenMapa {
-  width: 46em;
+  width: 34em;
   height: 25em;
   margin-left: 1em;
 }
@@ -127,7 +127,7 @@
 .imagenServicios {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 44em;
+  width: 34em;
   height: 32em;
   margin: 1.5em;
   display: flex;
@@ -149,7 +149,7 @@
 .element2 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 44em;
+  width: 34em;
   height: 32em;
   margin: 1em;
   display: flex;
@@ -208,7 +208,7 @@
 .imagenEquipo {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 45em;
+  width: 34em;
   height: 32em;
   margin: 1.5em;
 }
@@ -319,7 +319,7 @@ p {
 .element2 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 48em;
+  width: 42em;
   height: 40em;
   margin: 1em;
   display: flex;
@@ -561,7 +561,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
   }
   /*====================   SECCION SERVICIOS  ==================*/
@@ -572,7 +572,7 @@ footer {
     margin-bottom: 5em;
     margin-top: 3em;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
   }
   .servicios__titulo {
@@ -589,6 +589,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 1em 0em 5em 0em;
+    justify-content: space-between;
   }
   .equipo__title {
     display: flex;

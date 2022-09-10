@@ -127,7 +127,7 @@
 .imagenServicios {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 46em;
+  width: 44em;
   height: 32em;
   margin: 1.5em;
   display: flex;
@@ -149,7 +149,7 @@
 .element2 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 47em;
+  width: 44em;
   height: 32em;
   margin: 1em;
   display: flex;
@@ -208,7 +208,7 @@
 .imagenEquipo {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 47.5em;
+  width: 45em;
   height: 32em;
   margin: 1.5em;
 }
@@ -419,6 +419,7 @@ footer {
 
 .copywright {
   grid-area: copywright;
+  font-weight: bold;
 }
 
 .footer_iconos {
